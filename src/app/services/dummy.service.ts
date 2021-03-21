@@ -15,7 +15,7 @@ export class DummyService {
       name: 'Doctor Who',
       language: 'English',
       genres: ['Sci-Fi', ' Action', ' Adventure'],
-      id: 210,
+      id: 110,
       summary: 'A show about something',
       status: 'ongoing',
       image: 'https://culvercitycrossroads.com/wp-content/uploads/2016/02/talent-show.jpg'
@@ -24,7 +24,7 @@ export class DummyService {
         name: 'The Magicians',
         language: 'English',
         genres: ['Sci-Fi', 'Action', 'Adventure'],
-        id: 210,
+        id: 220,
         summary: 'A show about magicians and their trauma.',
         status: 'ongoing',
         image: 'https://static.tvmaze.com/uploads/images/medium_portrait/231/579166.jpg'
@@ -64,5 +64,8 @@ export class DummyService {
 
   getEpisodes(): Observable<Array<Episode>> {
     return of<Array<Episode>>(this.episodes);
+  }
+  getShow(id: string): Observable<Show> {
+    return of<Show>(this.shows[0]);
   }
 }
