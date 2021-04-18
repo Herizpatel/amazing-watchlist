@@ -43,7 +43,7 @@ export class DummyService {
       new Episode({
           id: 101,
           name: 'pilot',
-          season: 1,
+          season: 12,
           episode: 1,
           airdate: '2021-02-02',
           summary: 'The pilot episode.'
