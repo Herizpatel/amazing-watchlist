@@ -15,6 +15,9 @@ export class SearchComponent implements OnInit {
   }
 
   search(): void {
+    if (this.query.length === 0){
+      return;
+    }
     this.router.navigate(['search', this.query]);
   }
 }
