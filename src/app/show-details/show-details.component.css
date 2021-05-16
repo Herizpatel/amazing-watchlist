@@ -1,7 +1,11 @@
-.mat-column-season, .mat-column.episode, .mat-column.number{
+.mat-column-number {
   width: 60px;
 }
 
-.mat-column.aired{
+.mat-column-aired {
   width: 100px;
-  }
+}
+
+table {
+  width: 100%;
+}
