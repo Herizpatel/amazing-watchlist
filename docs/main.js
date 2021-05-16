@@ -320,9 +320,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/input */ "qFsG");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "ofXK");
 /* harmony import */ var _controls_htmlstripper_pipe__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../controls/htmlstripper.pipe */ "36JV");
-/* harmony import */ var _controls_encrypt_pipe__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../controls/encrypt.pipe */ "TSsO");
-/* harmony import */ var _controls_shorten_pipe__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../controls/shorten.pipe */ "/atG");
-
+/* harmony import */ var _controls_shorten_pipe__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../controls/shorten.pipe */ "/atG");
 
 
 
@@ -384,14 +382,13 @@ function ShowDetailsComponent_th_25_Template(rf, ctx) { if (rf & 1) {
 function ShowDetailsComponent_td_26_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](2, "encrypt");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](3, "shorten");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](4, "htmlstripper");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](2, "shorten");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipe"](3, "htmlstripper");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const episode_r14 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](2, 1, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](3, 4, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](4, 7, episode_r14.summary), 250), 1));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind2"](2, 1, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpipeBind1"](3, 4, episode_r14.summary), 250));
 } }
 function ShowDetailsComponent_tr_27_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "tr", 13);
@@ -456,7 +453,7 @@ ShowDetailsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](24, 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](25, ShowDetailsComponent_th_25_Template, 2, 0, "th", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](26, ShowDetailsComponent_td_26_Template, 5, 9, "td", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](26, ShowDetailsComponent_td_26_Template, 4, 6, "td", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](27, ShowDetailsComponent_tr_27_Template, 1, 0, "tr", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](28, ShowDetailsComponent_tr_28_Template, 1, 0, "tr", 10);
@@ -474,7 +471,7 @@ ShowDetailsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("matHeaderRowDef", ctx.tableHeaders);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("matRowDefColumns", ctx.tableHeaders);
-    } }, directives: [_angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_5__["MatInput"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRow"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["TitleCasePipe"], _controls_htmlstripper_pipe__WEBPACK_IMPORTED_MODULE_7__["HtmlstripperPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"], _controls_encrypt_pipe__WEBPACK_IMPORTED_MODULE_8__["EncryptPipe"], _controls_shorten_pipe__WEBPACK_IMPORTED_MODULE_9__["ShortenPipe"]], styles: [".mat-column-season[_ngcontent-%COMP%], .mat-column.episode[_ngcontent-%COMP%], .mat-column.number[_ngcontent-%COMP%]{\r\n  width: 60px;\r\n}\r\n\r\n.mat-column.aired[_ngcontent-%COMP%]{\r\n  width: 100px;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNob3ctZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsWUFBWTtFQUNaIiwiZmlsZSI6InNob3ctZGV0YWlscy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hdC1jb2x1bW4tc2Vhc29uLCAubWF0LWNvbHVtbi5lcGlzb2RlLCAubWF0LWNvbHVtbi5udW1iZXJ7XHJcbiAgd2lkdGg6IDYwcHg7XHJcbn1cclxuXHJcbi5tYXQtY29sdW1uLmFpcmVke1xyXG4gIHdpZHRoOiAxMDBweDtcclxuICB9XHJcbiJdfQ== */"] });
+    } }, directives: [_angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_5__["MatInput"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRow"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["TitleCasePipe"], _controls_htmlstripper_pipe__WEBPACK_IMPORTED_MODULE_7__["HtmlstripperPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["DatePipe"], _controls_shorten_pipe__WEBPACK_IMPORTED_MODULE_8__["ShortenPipe"]], styles: [".mat-column-number[_ngcontent-%COMP%] {\r\n  width: 60px;\r\n}\r\n\r\n.mat-column-aired[_ngcontent-%COMP%] {\r\n  width: 100px;\r\n}\r\n\r\ntable[_ngcontent-%COMP%] {\r\n  width: 100%;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNob3ctZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztBQUNiIiwiZmlsZSI6InNob3ctZGV0YWlscy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hdC1jb2x1bW4tbnVtYmVyIHtcclxuICB3aWR0aDogNjBweDtcclxufVxyXG5cclxuLm1hdC1jb2x1bW4tYWlyZWQge1xyXG4gIHdpZHRoOiAxMDBweDtcclxufVxyXG5cclxudGFibGUge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcbiJdfQ== */"] });
 
 
 /***/ }),
@@ -646,7 +643,7 @@ class Episode {
         this.airDate = (episodeInfo.airdate) ? new Date(episodeInfo.airdate) : new Date(0);
         this.summary = (episodeInfo.summary) ? episodeInfo.summary : 'This is summary';
         this.fullNumber = `S${(Number(episodeInfo.season) > 9) ? episodeInfo.season : '0' + episodeInfo.season}` +
-            `E${(Number(episodeInfo.number) > 9) ? episodeInfo.number : '0' + episodeInfo.episode}`;
+            `E${(Number(episodeInfo.number) > 9) ? episodeInfo.number : '0' + episodeInfo.number}`;
     }
 }
 
