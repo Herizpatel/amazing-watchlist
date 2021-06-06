@@ -1,9 +1,10 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { Episode } from '../models/episode.model';
 import { Show } from '../models/show.model';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {MatTableDataSource} from '@angular/material/table';
 import {TvmazeService} from '../services/tvmaze.service';
+import {PouchService} from '../services/pouch.service';
 
 @Component({
   selector: 'app-show-details',
@@ -15,7 +16,7 @@ export class ShowDetailsComponent implements OnInit {
   show: Show;
   episodes: MatTableDataSource<Episode>;
   tableHeaders: Array<string>;
-  constructor(private route: ActivatedRoute, private tvService: TvmazeService) {
+  constructor(private route: ActivatedRoute, private tvService: TvmazeService, private router: Router, private pouch: PouchService) {
     this.tableHeaders = ['number', 'name', 'aired', 'summary'];
   }
 
@@ -33,6 +34,10 @@ export class ShowDetailsComponent implements OnInit {
   applyFilter(e: Event): void {
     const filterValue = (e.target as HTMLInputElement).value;
     this.episodes.filter = filterValue.trim().toLowerCase();
+  }
+
+  addShow(): void {
+    this.pouch.addShow(this.show);
   }
 
 }
